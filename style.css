@@ -264,7 +264,7 @@ h1{
 
     
     overflow-x:hidden;
-    background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1) ), url("img/image.png");
+    background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4) ), url("img/image.png");
     background-blend-mode: darken;
     background-position:center;
     background-size:cover;
