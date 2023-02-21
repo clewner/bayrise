@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts.js"></script>
     <title>BayRISE</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
     </div>
     <div class="titlecontainer">
         <a class="buttondown" href="#about"><button class="button button--winona" data-text="Learn More"><span>Check us out</span></button></a>
-        <h1 class="initialtitle">WE ARE BAYRISE.</h1>
+        <h1 class="initialtitle">WE ARE BAYRISE</h1>
         
     </div>
     <nav class="navbar" id ="navbar">
@@ -34,9 +36,17 @@
             </div>
         </div>
     </nav>
+    <div id="hiddennavbar">
+        <div class="hiddenlinkwrapper">
+        <a href= "#about" class = "hiddenlink link selected">About</a>
+        <a href= "#" class = "hiddenlink link">Projects</a>
+        <a href= "#" class = "hiddenlink link">Contact</a>
+        <a href= "#" class = "hiddenlink link">Donate</a>
+        </div>
+    </div>
     <div id="about" class="aboutcontainer">
         
-        <div class="aboutwithimage">
+       
             
                 <div class="aboutparagraphcontainer">
                     
@@ -44,13 +54,32 @@
                     <p class="aboutparagraph">We are BayRISE, an organization dedicated to creating positive change in the Bay Area. We believe that this starts with people. Our goal is to create long term progress by fighting inequality and supporting those in need.</p>
                 </div>
             
-        </div>
+      
 
     </div>
     <div class="teamcontainer">
         <div class="teamparagraph">
             <h2 class="teamtitle">MEET THE TEAM</h2>
             <p class="teamsubtext">Our team consists of a group high schoolers from different schools in the Bay Area with one trait in common: the desire to improve our home.</p>
+
+            <div class="membercontain">
+                <div class="memberitem">
+                    <img class="itemimage" src="img/mebottom.jpg">
+                    <h6 class="membername">Isaac Saxonov</h6>
+                    <p class="itemtext">Executive Director, Co-founder</p>
+                </div>
+                <div class="memberitem">
+                    <img class="itemimage" src="img/kaidencrop.jpg">
+                    <h6 class="membername">Kaiden Carr</h6>
+                    <p class="itemtext">Project Coordinator, Founding Member</p>
+                </div>
+                <div class="memberitem">
+                    <img class="itemimage" src="img/jasperback.jpg">
+                    <h6 class="membername">Jasper Humphreys</h6>
+                    <p class="itemtext">Director of Development, Co-founder</p>
+                </div>
+            </div>
+            
         </div>
     </div>
 </body>
