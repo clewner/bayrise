@@ -418,6 +418,84 @@ h1{
 
 /* end of about*/
 
+/* our story*/
+
+
+.ourstorycontainer{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    background-color: #FEFEE3;
+    border:none;
+    margin:0;
+    padding:0;
+    min-height:100vh;
+
+    
+    overflow-x:hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) ), linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4) ), url("img/kaidenteachingcrop.jpg");
+    background-blend-mode: darken;
+    background-position:center;
+    background-size:cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+
+
+.ourstoryparagraphcontainer{
+    position: absolute;
+    background: transparent;
+    transform: translateY(-50%);
+    width:40%;
+    right:50%;
+    top:50%;
+    
+    
+   
+    
+    
+
+}
+
+.ourstoryimage{
+    
+    position: relative;
+    float:right;
+    height:100%;
+    border-radius: 15px;
+}
+
+.ourstorytitle{
+    text-align: left;
+    position: relative;
+    
+    font-size:80px;
+    margin:0;
+    margin-bottom:20px;
+    padding:0;
+    color:white;
+ 
+}
+
+.ourstoryparagraph{
+
+    text-align: left;
+    top:20px;
+    padding:0;
+    margin:0;
+    font-size:40px;
+    color:white;
+    line-height: 1.35;
+}
+
+
+/* end of our story*/
+
 /* our team*/
 
 .teamcontainer{
@@ -515,10 +593,21 @@ h1{
         font-size:35px;
         line-height: 1.35;
     }
+    .ourstoryparagraph{
+        top:20px;
+        font-size:35px;
+        line-height: 1.35;
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .aboutparagraph{
+        top:20px;
+        font-size:30px;
+        line-height: 1.35;
+        
+    }
+    .ourstoryparagraph{
         top:20px;
         font-size:30px;
         line-height: 1.35;
@@ -536,12 +625,26 @@ h1{
         
     }
 
+    .ourstoryparagraphcontainer{
+        right:50%;
+        transform:translateX(50%) translateY(-50%);
+        width:60%;
+    }
+
     .aboutparagraph{
         text-align: left;
     }
 
+    .ourstoryparagraph{
+        text-align: right;
+    }
+
     .abouttitle{
         text-align: right;
+    }
+
+    .ourstorytitle{
+        text-align: left;
     }
 
     .teamparagraph{
@@ -610,11 +713,20 @@ h1{
         left:50%;
         transform:translateX(-50%) translateY(-50%);
         width: 85%;
-        
-        
+    
+    }
+
+    .ourstoryparagraphcontainer{
+        right:50%;
+        transform:translateX(50%) translateY(-50%);
+        width: 85%;
     }
 
     .abouttitle{
+        font-size:70px;
+    }
+
+    .ourstorytitle{
         font-size:70px;
     }
 
@@ -623,10 +735,21 @@ h1{
         font-size:25px;
     }
 
+    .ourstoryparagraph{
+        text-align: right;
+        font-size:25px;
+    }
+
     .abouttitle{
         margin:0;
         padding:0;
         text-align: left;
+    }
+
+    .ourstorytitle{
+        margin:0;
+        padding:0;
+        text-align: right;
     }
 }
 
