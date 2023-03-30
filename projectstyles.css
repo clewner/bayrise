@@ -1,20 +1,329 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+  font-family: roobert;
+  src: url(fonts/Roobert-Regular.ttf);
+}
+
 body{
     font-family: 'Bebas Neue', cursive;
-    background: #000000;
+    background: black;
     margin:0;
     padding:0;
     overflow-x:hidden;
 }
 
+.titlecontainer{
+    
+    width:100vw;
+    height:100vh;
+    background-color: rgb(154, 235, 154);
+    
+}
+
+.titlegradient{
+    width:100%;
+    height:90%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-image: linear-gradient( rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0));
+}
+
+.titlebox{
+    width:100%;
+    top:50%;
+    position: relative;
+    transform:translateY(-50%);
+    display: inline-block;
+
+
+}
+
+
 .titletext{
-    font-size:100px;
+    font-size:130px;
     color:white;
+    
+    background-color: transparent;
     position: relative;
     padding:0;
-    padding:30px;
     margin:0;
+    
+    
+    text-align:center;
+
+
+    line-height:130px;
+
     display: block;
 
 }
+
+.titleparagraph{
+    margin:0;
+    padding:0;
+    color:white;
+    text-align:center;
+    position: relative;
+    display: block;
+    font-size:40px;
+    width:50%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.enrichmentcontainer{
+    width:100%;
+    background-color: rgb(154, 235, 154);
+    display: block;
+    margin:0;
+    padding:0;
+    position: relative;
+    
+}
+
+.enrichmentbox{
+    display: inline-block;
+    margin-top:120px;
+    width:100%;
+    position: relative;
+
+}
+
+.enrichmenttitle{
+    font-size:60px;
+    color:black;
+    position: relative;
+    padding:0;
+    padding-left:60px;
+    line-height:60px;
+    margin:0;
+
+    display: inline-block;
+}
+
+.enrichmentparagraph{
+    color:black;
+    width:60%;
+    font-size:25px;
+    padding:0;
+    line-height:1.3em;
+    letter-spacing: -0.5px;
+    padding-left:60px;
+    margin:0;
+    margin-top:10px;
+    position: relative;
+    text-align: left;
+    font-family: roobert;
+}
+
+.codingcontainer{
+  width:70%;
+  position: relative;
+  margin-left: auto; 
+  margin-right: 0;
+  right:50px;
+  margin-top:40px;
+  border-top:2px solid #000000;
+}
+
+.codinginfohead{
+  font-size:35px;
+  text-align: right;
+  margin:0;
+  margin-top:40px;
+  padding:0;
+}
+
+.codinginfopar{
+  font-size:25px;
+  text-align: right;
+  margin:0;
+  padding:0;
+  font-family: roobert;
+}
+
+.leftcodingcontainer{
+  width:70%;
+  position: relative;
+  left:50px;
+
+  margin-top:40px;
+  border-top:2px solid #000000;
+}
+
+.codinginfoheadleft{
+  font-size:35px;
+  text-align: left;
+  margin:0;
+  margin-top:40px;
+  padding:0;
+}
+
+
+/* navbar*/
+
+
+.navbar {
+    
+    z-index:1000;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background: transparent;
+    line-height: 80px;
+  }
+  
+  .navlink {
+    transition: all .2s;
+    color: white;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding: 10px 13px;
+    
+  }
+  
+  .link {
+    position: relative;
+  }
+  
+  
+  .otherlinks {
+    padding:0;
+    margin:0;
+    left:30px;
+    display: inline-block;
+    position: absolute;
+  }
+
+  
+  .navlink:hover {
+    color: #8EB897;
+  }
+  .navlink:after {
+    transition: all .2s;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    border-radius:5px;
+    /*border: 2px solid;
+    border-color:#8EB897;*/
+    color: transparent;
+    background: rgba(0, 0, 0, 0.8);
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .navlink:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+
+  .burgerwrapper {
+    position: relative;
+    float: left;
+    margin-left: min(5.3vw, 40px);
+    height: 80px;
+  }
+
+  .hamburger {
+    z-index:1000;
+    display: none;
+    vertical-align: middle;
+  }
+  
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #hamburger-1.is-active .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #hamburger-1.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(45deg);
+    -ms-transform: translateY(10px) rotate(45deg);
+    -o-transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  #hamburger-1.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    -o-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  #hiddennavbar {
+    opacity: 0;
+    display: block;
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+  }
+
+  .hiddenlinkwrapper {
+    width: 150px;
+  
+    display: block;
+    top: 50vh;
+  
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .hiddenlink {
+    font-size: 2em;
+    text-decoration: none;
+    display: inline-block;
+  
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+
+
+/* end of navbar*/
+
+/* carousel*/
+
+
+/* end of carousel*/
