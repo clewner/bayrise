@@ -157,11 +157,19 @@ body{
 }
 
 .codinginfoheadleft{
-  font-size:35px;
+  font-size:70px;
   text-align: left;
   margin:0;
   margin-top:40px;
   padding:0;
+}
+
+.enrichmentimg{
+  height:100%;
+  position: absolute;
+  right:0;
+  top:0;
+  display: none;
 }
 
 
