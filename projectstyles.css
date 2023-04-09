@@ -9,7 +9,7 @@
 
 body{
     font-family: 'Bebas Neue', cursive;
-    background: black;
+    background: white;
     margin:0;
     padding:0;
     overflow-x:hidden;
@@ -77,7 +77,7 @@ body{
 
 .enrichmentcontainer{
     width:100%;
-    background-color: antiquewhite;
+    background-color: white;
     display: block;
     margin:0;
     padding:0;
@@ -85,11 +85,26 @@ body{
     
 }
 
+.firstcontainer{
+  left:50%;
+  transform: translateX(-50%);
+  width: 80%;
+  display: block;
+  
+  padding:0;
+  margin:0;
+  margin-top:150px;
+  
+  position: relative;
+ 
+}
+
 
 .enrichmentbox{
     display: inline-block;
-    margin-top:120px;
-    width:100%;
+    
+    width: 60%;
+    
     position: relative;
 
 }
@@ -99,7 +114,7 @@ body{
     color:black;
     position: relative;
     padding:0;
-    padding-left:60px;
+    padding:0;
     line-height:60px;
     margin:0;
 
@@ -108,12 +123,12 @@ body{
 
 .enrichmentparagraph{
     color:black;
-    width:60%;
+    width:100%;
     font-size:25px;
     padding:0;
     line-height:1.3em;
     letter-spacing: -0.5px;
-    padding-left:60px;
+    padding:0;
     margin:0;
     margin-top:10px;
     position: relative;
@@ -121,17 +136,33 @@ body{
     font-family: roobert;
 }
 
+.enrichmentimg{
+  position: absolute;
+  right:0;
+  width:35%;
+  /*border:2px solid #000000;*/
+  
+  padding:10px;
+  background-color: rgb(235, 220, 202);
+  border-radius: 5px;
+  
+  top:50%;
+  transform: translateY(-50%);
+
+}
+
 .codingcontainer{
   width:70%;
   position: relative;
-  margin-left: auto; 
-  margin-right: 0;
-  right:50px;
-  margin-top:40px;
+  text-align: center;
+  left:50%;
+  transform: translateX(-50%);
+  margin-top:80px;
   border-top:2px solid #000000;
 }
 
 .codinginfohead{
+  
   font-size:35px;
   text-align: right;
   margin:0;
@@ -140,6 +171,7 @@ body{
 }
 
 .codinginfopar{
+  
   font-size:25px;
   text-align: right;
   margin:0;
@@ -150,7 +182,8 @@ body{
 .leftcodingcontainer{
   width:70vw;
   position: relative;
-  left:50px;
+  left:50%;
+  transform: translateX(-50%);
 
   margin-top:40px;
   border-top:2px solid #000000;
@@ -181,13 +214,7 @@ body{
   line-height: 1.4em;
 }
 
-.enrichmentimg{
-  height:100%;
-  position: absolute;
-  right:0;
-  top:0;
-  display: none;
-}
+
 
 .scratchimagecontainer{
   width:70vw;
@@ -242,8 +269,9 @@ body{
     width: 100%;
     height: 80px;
     display: block;
-    background: transparent;
+    background: rgba(0,0,0,0.3);
     line-height: 80px;
+   
   }
   
   .navlink {
@@ -276,33 +304,7 @@ body{
   .navlink:hover {
     color: #8EB897;
   }
-  .navlink:after {
-    transition: all .2s;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 1px;
-    content: '.';
-    border-radius:5px;
-    /*border: 2px solid;
-    border-color:#8EB897;*/
-    color: transparent;
-    background: rgba(0, 0, 0, 0.8);
-    visibility: none;
-    opacity: 0;
-    z-index: -1;
-  }
-
-  .navlink:hover:after {
-    opacity: 1;
-    visibility: visible;
-    height: 100%;
-  }
+  
 
   .burgerwrapper {
     position: relative;
@@ -360,7 +362,7 @@ body{
     text-align: center;
     top: 0;
     left: 0;
-    background-color: #000000;
+    background: white;
   }
 
   .hiddenlinkwrapper {
@@ -389,3 +391,22 @@ body{
 
 
 /* end of navbar*/
+
+
+.footer{
+  width:60%;
+  display: block;
+  position: relative;
+  left:50%;
+  transform: translate(-50%);
+  border-top:2px solid #000000;
+  padding-bottom:15px;
+
+}
+
+.copyright{
+  text-align: left;
+  font-family:roobert;
+  font-size:15px;
+  color:black;
+}
