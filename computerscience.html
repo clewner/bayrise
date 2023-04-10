@@ -8,16 +8,27 @@
     <link href="projectstyles.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="projectscripts.js"></script>
+    <script src="dropdown.js"></script>
 </head>
 <body>
     <nav class="navbar" id ="navbar">
         
         
         <div class = "otherlinks">
-            <a href= "index.html" class = "selected navlink link">About</a>
-            <a href= "programs.html" class = "navlink link">Programs</a>
+            <a href= "/" class = "selected navlink link">About</a>
+            <div class="dropdown"><a id ="dropclicker" class = "navlink link">Classes <svg class="dropicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></a>
+                <div class = "dropdowncontent">
+                    <a href="computerscience.html" class="hoverlink">Computer Science Classes</a>
+                    <a href="#" class="hoverlink">Arts & Crafts Classes</a>
+                    <a href="#" class="hoverlink">Physics Classes</a>
+                </div>
+            </div>
+            <a href ="#" class="navlink link">Other Initiatives</a>
             <a href= "#" class = "navlink link">Contact</a>
             <a href= "#" class = "navlink link">Donate</a>
+            
         </div>
         <div class="burgerwrapper">
             <div class="hamburger" id="hamburger-1">
@@ -29,8 +40,16 @@
     </nav>
     <div id="hiddennavbar">
         <div class="hiddenlinkwrapper">
-        <a href= "#about" class = "hiddenlink link selected">About</a>
-        <a href= "programs.html" class = "hiddenlink link">Programs</a>
+        <a href= "/" class = "hiddenlink link selected">About</a>
+        <a id="drophidden" class = "hiddenlink link">Classes <svg class="dropicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg></a>
+        <div class="hiddendropdown">
+            <a class="linkdrop link" href ="computerscience.html">Computer Science Classes</a>
+            <a class="linkdrop link" href ="">Arts & Crafts Classes</a>
+            <a class="linkdrop link" href ="">Physics Classes</a>
+        </div>
+        <a href= "#" class = "hiddenlink link">Other Initiatives</a>
         <a href= "#" class = "hiddenlink link">Contact</a>
         <a href= "#" class = "hiddenlink link">Donate</a>
         </div>
@@ -64,7 +83,7 @@
             <p class="codinginfoparleft">Students start with learning basic game development concepts like the coordinate plane, level and character design, and integrating online assets into their projects. Then, they move on to learning some basic programming concepts like loops, conditionals, and variables. 
             <p class="codinginfoparleft">We encourage students to explore their creativity by designing and developing their own games and animations. This way, we provide a fun and interactive way for younger kids to learn coding while building problem-solving, creativity, and critical thinking skills along the way.</p>
             <div class="scratchimagecontainer">
-                <img class="meteachingimage" src="img/nanacrop.jpg"><img class="scratchimage" src="img/scratchimage.png"><img class="babycodeimage" src="img/babycodecrop.png"><img class="babyscreenshot" src="img/babyscreenshotcrop.png">
+                <img class="meteachingimage imageinside" src="img/nanacrop.jpg"><img class="scratchimage imageinside" src="img/scratchimage.png"><img class="babycodeimage imageinside" src="img/babycodecrop.png"><img class="babyscreenshot imageinside" src="img/babyscreenshotcrop.png">
             </div>
 
             <p class="codinginfosmallhead">Younger Teens (13-15):</p>
@@ -72,7 +91,7 @@
             <p class="codinginfoparleft">Students start with learning the basic syntax and data types in Python, as well as fundamental programing concepts like loops, conditionals and variables. Then they move on to more advanced concepts like using APIs, file I/O, and web scraping.</p>
             <p class="codinginfoparleft">They will work on projects like creating a weather app, building a chatbot, or developing a game. By the end of the program, students will have a solid understanding of Python and the confidence to continue exploring more advanced programming concepts on their own.</p>
             <div class="scratchimagecontainer">
-                <img class="meteachingimage" src="img/meteaching.png"><img class="scratchimage" src="img/python-logo.png"><img class="babycodeimage" src="img/vszoomcrop.png"><img class="babyscreenshot" src="img/webscrapezoom.png">
+                <img class="meteachingimage imageinside" src="img/meteaching.png"><img class="scratchimage imageinside" src="img/python-logo.png"><img class="babycodeimage imageinside" src="img/vszoomcrop.png"><img class="babyscreenshot imageinside" src="img/webscrapezoom.png">
             </div>
 
             <p class="codinginfosmallhead">Young Adults (16-20):</p>
@@ -80,7 +99,7 @@
             <p class="codinginfoparleft">Students start with learning the basic structure of a website in HTML, including tags, attributes and elements. From there, they move on to CSS, where they learn how to style and layout web pages using properties like color, font, and positioning. As students progress, they learn more advanced concepts like Javascript programming, including functions, objects, and event listeners. Additionally, they learn about integrating external libraries and frameworks into their projects, which can greatly enhance the functionality and visual appeal of their web applications.</p>
             <p class="codinginfoparleft">They will work on real-world projects like responsive websites, interactive user interfaces, or web-based games. By the end of the program, students will have a solid understanding of HTML, CSS, and Javascript, and will have the confidence to continue exploring more advanced web development concepts on their own. These skills are highly transferable and can be applied to a wide range of careers in the tech industry, making our program an excellent choice for those seeking a career in web development.</p>
             <div class="scratchimagecontainer">
-                <img class="meteachingimage" src="img/htmlcrop.png"><img class="scratchimage" src="img/csscrop.png"><img class="babycodeimage" src="img/jslogo.png"><img class="babyscreenshot" src="img/gradecroper.png">
+                <img class="meteachingimage imageinside" src="img/htmlcrop.png"><img class="scratchimage imageinside" src="img/csscrop.png"><img class="babycodeimage imageinside" src="img/jslogo.png"><img class="babyscreenshot imageinside" src="img/gradecroper.png">
             </div>
             
         </div>
