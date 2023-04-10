@@ -88,7 +88,7 @@ body{
 .firstcontainer{
   left:50%;
   transform: translateX(-50%);
-  width: 80%;
+  width: min(80%, 1120px);
   display: block;
   
   padding:0;
@@ -139,7 +139,7 @@ body{
 .enrichmentimg{
   position: absolute;
   right:0;
-  width:min(500px, 35%);
+  width: 35%;
   /*border:2px solid #000000;*/
   
   padding:10px;
@@ -152,7 +152,7 @@ body{
 }
 
 .codingcontainer{
-  width:70%;
+  width: min(70%, 980px);
   position: relative;
   text-align: center;
   left:50%;
@@ -180,7 +180,7 @@ body{
 }
 
 .leftcodingcontainer{
-  width:70vw;
+  width: min(70%, 980px);
   position: relative;
   left:50%;
   transform: translateX(-50%);
@@ -217,7 +217,7 @@ body{
 
 
 .scratchimagecontainer{
-  width:70vw;
+  width: min(70vw, 980px);;
   display: inline-block;
   position: relative;
   margin-top:20px;
