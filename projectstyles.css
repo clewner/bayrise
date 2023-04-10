@@ -139,7 +139,7 @@ body{
 .enrichmentimg{
   position: absolute;
   right:0;
-  width:35%;
+  width:min(500px, 35%);
   /*border:2px solid #000000;*/
   
   padding:10px;
