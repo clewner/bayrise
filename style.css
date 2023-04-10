@@ -793,6 +793,9 @@ h1{
 
 @media screen and (max-width: 800px){
 
+    .navbar{
+        background:transparent;
+    }
     #navbar{
         position: fixed;
         top:0;
