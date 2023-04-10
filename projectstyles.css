@@ -426,7 +426,6 @@ body{
   padding-top:0px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
 .linkdrop{
   font-size: 2em;
   text-decoration: none;
@@ -437,6 +436,12 @@ body{
   margin-top: 25px;
   text-align: center;
   margin-bottom: 25px;
+  transition: 0.2s;
+}
+
+.linkdrop:hover{
+  
+  color:#8EB897;
 }
 
 .hiddendropdown{

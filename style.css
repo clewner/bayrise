@@ -284,6 +284,7 @@ h1{
     top: 0;
     left: 0;
     background-color: #000000;
+    overflow-y: scroll;
   }
 
   .hiddenlinkwrapper {
@@ -314,6 +315,8 @@ h1{
   .hiddenlink:hover{
     color:#8EB897;
   }
+
+  
 
   .dropdown{
     display: inline-block;
@@ -346,7 +349,13 @@ h1{
     margin-top: 25px;
     text-align: center;
     margin-bottom: 25px;
+    transition: 0.2s;
 }
+
+.linkdrop:hover{
+    
+    color:#8EB897;
+  }
 
 .hiddendropdown{
     display: none;
