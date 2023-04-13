@@ -8,9 +8,6 @@ var isMobile;
     }
 
 $(document).ready(function() {
-    if(isMobile){
-        $("body").css("letter-spacing", "-1px");
-  
-      }  
+
     
 });
