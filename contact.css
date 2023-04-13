@@ -82,8 +82,10 @@ p{
     font-family: 'Bebas Neue', cursive;
 }
 
+
 .dropdowncontent{
     background: rgba(0,150,0,0.5);
+    text-align: left;
 }
 
 button.button {

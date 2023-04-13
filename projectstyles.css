@@ -306,6 +306,9 @@ body{
   padding-bottom:0;
   padding-top:15px;
 }
+.dropdowncontent{
+  padding-bottom:8px;
+}
 
 @media screen and (max-width: 1200px) {
   .enrichmentimg{
