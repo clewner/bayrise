@@ -282,6 +282,39 @@ body{
  
 }
 
+.flowercontainer{
+  width:100%;
+  position: relative;
+  display: inline-block;
+  margin-bottom:50px;
+}
+
+.flower{
+  width:60%;
+  margin-bottom:25px;
+
+}
+
+
+
+.flowerimg{
+  position: absolute;
+  right:0;
+  top:0;
+  
+  width: 35%;
+  /*border:2px solid #000000;*/
+  
+  padding:10px;
+  background-color: rgb(177, 230, 177);
+  border-radius: 5px;
+  top:50%;
+  transform:translateY(-50%);
+
+
+}
+
+
 
 
 .footer{
@@ -343,6 +376,22 @@ body{
     left:50%;
     width: 90%;
     transform: translateX(-50%);
+  }
+
+  .flowerimg{
+    position: relative;
+    width:min(500px,70%);
+    top:0;
+    left:50%;
+
+    bottom:0;
+    transform: translateY(0) translateX(-50%);
+    margin-bottom:15px;
+  }
+
+  .flower{
+    
+    width:100%;
   }
 
 
