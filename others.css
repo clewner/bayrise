@@ -72,7 +72,7 @@ body{
     display: block;
     position: relative;
     background:linear-gradient( rgba(0, 0, 0, 1),rgb(106, 202, 102));
-    height:500px;
+    
 }
 
 
@@ -88,10 +88,20 @@ body{
   
 }
 
+.slideshow-containersec{
+width: min(700px, 85%);
+  position: relative;
+  margin: auto;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
 
+}
+
+.secslide{
+    display: none;
 }
 
 /* Next & previous buttons */
@@ -156,6 +166,24 @@ body{
 
 /* end of slideshow */
 
+.footer{
+    width:60%;
+    display: block;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    border-top:2px solid #FFF;
+    padding-bottom:15px;
+    margin-top:50px;
+  
+  }
+  
+  .copyright{
+    text-align: left;
+    font-family:roobert;
+    font-size:15px;
+    color:#FFF;
+  }
 
 
 

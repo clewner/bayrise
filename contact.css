@@ -202,7 +202,23 @@ button.button {
     }
 
 
-
+    .footer{
+      width:60%;
+      display: block;
+      position: relative;
+      left:50%;
+      transform: translate(-50%);
+      border-top:2px solid #000000;
+      padding-bottom:15px;
+    
+    }
+    
+    .copyright{
+      text-align: left;
+      font-family:roobert;
+      font-size:15px;
+      color:black;
+    }
 
 
 

@@ -15,6 +15,15 @@ body{
     overflow-x:hidden;
 }
 
+.navbar{
+  background: rgba(0,150,0,0.5);
+}
+
+
+.dropdowncontent{
+  background: rgba(0,150,0,0.5);
+}
+
 .titlecontainer{
     
     width:100vw;
@@ -22,6 +31,8 @@ body{
     background-color: rgb(51, 197, 51);
     
 }
+
+
 
 .titlegradient{
     width:100%;
@@ -145,7 +156,7 @@ body{
   /*border:2px solid #000000;*/
   
   padding:10px;
-  background-color: rgb(235, 220, 202);
+  background-color: rgb(177, 230, 177);
   border-radius: 5px;
   
   top:50%;
@@ -231,7 +242,7 @@ body{
   margin-top:20px;
   margin-bottom:80px;
   border-radius:15px;
-  background-color: rgb(235, 220, 202);
+  background-color: rgb(177, 230, 177);
 }
 
 .imageinside{
@@ -341,8 +352,9 @@ body{
   }
 
   .navbar{
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,150,0,0.5);
   }
+ 
 
 
 }
