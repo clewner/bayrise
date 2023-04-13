@@ -295,7 +295,10 @@ body{
 
 }
 
-
+.otherpage{
+  text-decoration: underline;
+  color:#7ba083;
+}
 
 .flowerimg{
   position: absolute;
