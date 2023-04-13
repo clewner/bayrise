@@ -819,6 +819,9 @@ h1{
     .partnermember{
         height:170px;
     }
+    .partnertitle{
+        font-size:60px;
+    }
 
     
 }
