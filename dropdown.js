@@ -5,6 +5,7 @@ $(document).ready(function() {
         
         if($("#hiddennavbar").hasClass("is-active")){
         $("#hiddennavbar").removeClass("is-active");
+ 
         $("#hiddennavbar").addClass("is-removed");
         
         }else if($("#hiddennavbar").hasClass("is-removed")){
