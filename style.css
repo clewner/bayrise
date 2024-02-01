@@ -497,6 +497,68 @@ h1{
     color:black;
 }
 
+#popup {
+    display: none;
+    position: fixed;
+    z-index: 99999999999999999999;
+    font-size:30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.popupp{
+    padding:0;
+    margin:0;
+}
+
+
+.popupbutton:active {
+    transform: translateY(3px) translateX(-50%);
+  }
+
+.popupbutton{
+    top:5px;
+    position: relative;
+    left:50%;
+    transform:translateX(-50%);
+    letter-spacing: 2px;
+	text-transform: uppercase;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 14px;
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+    border: 2px solid;
+	cursor:pointer;
+	padding: 1em 2em;
+	border-color: white;
+	background: none;
+	color: inherit;
+	
+	z-index: 1;
+	
+}
+
+.popupbutton:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+.popupbutton > span {
+	vertical-align: middle;
+}
+
+
 .footer{
     width:60%;
     display: block;
